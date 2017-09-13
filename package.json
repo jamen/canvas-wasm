@@ -3,7 +3,7 @@
   "description": "Canvas functions suitable for WebAssembly",
   "author": "Jamen Marz",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "jamen/canvas-wasm",
   "scripts": {
     "demo": "budo demo -- -t wasmify"
