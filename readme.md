@@ -5,6 +5,14 @@
 
 Canvas's [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) has several methods, setters, and getters **not** suitable for WebAssembly.  Use this module to wrap a context for making it suitable.
 
+**Notice:** This is experimental and doesn't include a lot of things. Currently nothing using [memory](https://github.com/WebAssembly/design/blob/master/Semantics.md#linear-memory) is made.
+
+ - [ ] Pixel/image manipulation
+ - [ ] Gradients and patterns
+ - [ ] Text objects and styling
+ - [ ] Hit regions
+ - [ ] Other non-standard APIs
+
 ## Install
 
 ```sh
