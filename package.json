@@ -6,7 +6,7 @@
   "version": "0.2.0",
   "repository": "jamen/canvas-wasm",
   "scripts": {
-    "demo": "budo demo --live -- -t wasmify"
+    "demo": "budo demo --live -- -p [ wasmify -c wabt ]"
   },
   "devDependencies": {
     "budo": "^10.0.4",

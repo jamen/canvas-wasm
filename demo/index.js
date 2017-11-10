@@ -18,13 +18,12 @@ app({
   },
   actions: {
     select (state, actions, name) {
-      modules[name]({
+      var mod = modules[name]({
         canvas: create(context),
         math: Math
-      }).then(mod => {
-        Object.assign(global, mod)
-        actions.activate(mod)
       })
+      Object.assign(global, mod)
+      actions.activate(mod)
     },
     activate (state, actions, mod) {
       if (mod.start) mod.start(canvas.width, canvas.height)
